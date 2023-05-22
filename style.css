@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background-color: #242238;
+    /* margin-top: 1vh; */
+}
+
+.navBar{
+    height: 45px;
+    position: relative;
+    display: flex;
+    gap: 2vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo :is(img){
+    width: 37px;
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+.nav-links :is(ul){
+    cursor: default;
+    margin-left: 250px;
+}
+
+.nav-links a{
+    color: hsl(194, 85%, 62%);
+    font-size: 1.2vw;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    margin-left: 40px;
+
+}
+
+.hire button{
+    width: 120px;
+    border-radius: 10px 0;
+    height: 3.5vh;
+    background-color: #242238;
+}
+
+.hire a{
+    font-size: 1.1vw;
+    color: #f7931a;
+    font-weight: 800;
+}
