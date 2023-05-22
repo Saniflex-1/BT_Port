@@ -40,12 +40,49 @@ header{
 }
 
 .nav-links a{
-    color: hsl(194, 85%, 62%);
+    position: relative;
+    color: #4cc9f0;
     font-size: 1.2vw;
     letter-spacing: 0.1rem;
     font-weight: 700;
     margin-left: 40px;
+    transition: 0.3;
+    font-weight: 500;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop 0.5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
 
+.nav-links a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #f7931a;
+    height: 2px;
+    transform-origin: right;
+    bottom: -1px;
+    transform: scale(0);
+    transition: transform .5s;
+}
+
+.nav-links a:hover:before{
+    transform: scale(1);
+    transform-origin: left;
+}
+
+@keyframes slideTop{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .hire button{
