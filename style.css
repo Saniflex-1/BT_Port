@@ -14,16 +14,21 @@
 
 body{
     background-color: var(--secondary-color--);
-    margin-left: 50px;
     overflow-x: hidden;
 
 }
 
 .navBar{
-    position: relative;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav-bg{
+    background-color: #e2e1ec;
 }
 
 .logo img{
@@ -34,8 +39,8 @@ body{
 
 .nav-links ul{
     display: flex;
-    gap: 25px;
-    /* margin-left: 70px; */
+    margin-left: 50px;
+    gap: 15px;
 }
 
 .nav-links ul a{
@@ -93,8 +98,9 @@ body{
 .section{
     position: relative;
     display: flex;
-    height: 100%;
+    height: 100vh;
     width: 100vw;
+    margin-left: 50px;
 }
 
 .homepic{
@@ -104,36 +110,56 @@ body{
 
 .homepic .expi{
     position: absolute;
-    justify-content: center;
-    display: flex;
     top: 45vh;
-    left: 12vw;
+    left: 9vw;
     color: #fff;
-    width: 125px;
-    height: 60px;
+    width: 155px;
+    height: 80px;
     background-color: #737b7d;
     border-radius: 10px;
-    align-items: center;
+    line-height: 22px;
+}
+
+.expi p{
+
+    /* padding: 10px; */
+    margin: 15px;
+    font-size: 2.7vw;
+    /* text-align: center; */
+    font-family: cocon;
+    font-weight: 900;
+    color: #242238;
+}
+
+.expi span{
+    font-size: 1.0vw;
+    font-weight: 200;
+    color: black;
+    letter-spacing: 0.5px;
 }
 
 .homepic img{
-    margin-top: -100px;
+    margin-top: -45px;
     width: 800px;
 }
 
 .sub-1{
     position: relative;
-    margin-top: 40px;
+    margin-top: 140px;
     display: flex;
     flex-direction: column;
 }
 
 .sub-1 p{
-    font-size: 2.2vw;
+    font-size: 1.1vw;
     font-family: poppins;
     font-weight: 100;
     letter-spacing: 0.3em;
     color: #fff;
+}
+
+.sub-1 b{
+    font-size: 3vw;
 }
 
 .sub-1 span{
@@ -147,10 +173,13 @@ button.hire{
     border-radius: 50px;
     height: 50px;
     width: 150px;
-    background-color: #f7931a;
+    background-color: transparent;
     font-size: 1.2vw;
-    color: #fff;
-    letter-spacing: 1px;
+    border: #f7931a 1px solid;
+}
+
+.hire a{
+    color: #f7931a;
 }
 
 .sub-1 .tech{
@@ -194,64 +223,66 @@ button.hire{
     letter-spacing: 3px;
 }
 
-.myPro{
-    color: #fff;
-    margin-top: 20px;
-    font-size: 1.3vw;
-    font-family: cocon, poppins;
-    text-decoration: underline;
-}
-
-.latestPro{
-    bottom: 90px;
+.happy{
     display: flex;
-    position: absolute;
+    gap: 10px;
+    margin-left: 350px;
 }
 
-
-.pro1, .pro2, .pro3{
-    margin-left: 190px;
-    height: 90px;
-    width: 190px;
-    border: #4cc9f0 1px solid;
-    overflow: hidden;
-    border-radius: 20px;
-}
-
-:is(.pro1, .pro2, .pro3) p{
-    text-decoration: none;
-    text-align: center;
-    margin-top: 10px;
-    font-size: 1.5vw;
-    letter-spacing: 1PX;
-}
-
-.box{
-    height: 50px;
-    width: 50px;
+.happy .cir{
     background-color: #4cc9f0;
-    margin-left: 140px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
     margin-top: -10px;
 }
 
-.pro3 {
-    position: absolute;
-    width: 200px;
-    margin-left: 850px;
+.happy .cir:nth-of-type(2){
+    background-color: #f7931a;
+}
+
+.happy .client{
+    font-size: 3vw;
+    font-family: poppins;
+    font-weight: 800;
+    color: #f7931a;
+    margin-top: -44px;
+    margin-left: 120px;
+}
+
+.happy .hc{
+    margin-top: -27px;
+    color: #4cc9f0;
+    font-family: sans-serif;
+    font-size: 1.1vw;
+    margin-left: 20px;
+    letter-spacing: 2px;
+}
+
+#about-me{
+    position: relative;
+    margin-left: 50px;
+    height: 100vh;
+}
+
+#about{
+    display: flex;
     margin-top: 80px;
+
 }
 
-.pro2 {
-    position: absolute;
-    width: 200px;
-    margin-left: 500px;
-    margin-top: 40px;
+#about .line{
+    background-color: #f7931a;
+    width: 40px;
+    height: 3px;
 }
 
-.pro3 .box{
-    margin-left: 0px;
-}
-
-.pro2 .box{
-    margin-left: 0px;
+#about p{
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: rgb(172, 168, 163);
+    font-family: poppins;
+    margin-top: -20px;
+    margin-left: 10px;
 }
