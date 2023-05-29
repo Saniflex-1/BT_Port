@@ -256,7 +256,7 @@ button.toggles p{
     display: block;
 }
 
-@media screen and (max-width: 667px){
+@media screen and (device-width: 375px){
     body{
         /* background-color: #f7931a; */
         margin-left: -35px;
