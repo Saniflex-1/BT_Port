@@ -272,7 +272,7 @@ button.toggles p{
     }
 
     .nav-links ul a{
-        margin-left: 780px;
+        margin-left: -15px;
         display: flex;
         color: white;
         font-size: 15px;
@@ -314,14 +314,19 @@ button.toggles p{
         position: fixed;
         display: flex;
         justify-content: space-around;
-        margin-left: -789px;
-        /* width: 100%; */
+        margin-left: 45px;
+        width: 100%;
         align-items: center;
         background-color: #2c2b35;
     }
 
+        button.hereMe {
+            margin-left: 70px;
+        }
+
     .logo img{
-        margin-left: 860px;
+        /* margin-left: 860px; */
+        margin-left: 150px;
     }
 
     .homepic{
@@ -335,7 +340,7 @@ button.toggles p{
 
     .homepic .expi{
         left: 120px;
-        margin-top: -235px;
+        margin-top: 55px;
     }
 
     .homepic .expi p{
@@ -396,6 +401,8 @@ button.toggles p{
 
     }
 
+    
+
     .sub-1 .tech{
         margin-top: 100px;
     }
@@ -434,8 +441,23 @@ button.hire {
             /* width: 390px; */
     }
 
+    .nav-links ul a{
+        margin-left: -20px;
+    }
+
     .sub-1 b{
         font-size: 20px;
+    }
+}
+@media screen and (max-width: 320px){
+    .nav-links ul a{
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .nav-links ul a {
+        margin-left: 6px;
     }
 }
 
