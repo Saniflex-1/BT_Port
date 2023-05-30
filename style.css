@@ -256,30 +256,30 @@ button.toggles p{
     display: block;
 }
 
-@media screen and (device-width: 375px){
+@media screen and (max-width: 600px){
     body{
         /* background-color: #f7931a; */
         margin-left: -35px;
         height: 100vh;
-        width: 100vh;
+        /* width: 100vh; */
     }
 
     .nav-links ul{
         position: absolute;
         margin-top: 40px;
         flex-direction: column;
-        /* width: 100%; */
         transition: .3s;
     }
 
     .nav-links ul a{
-        left: -188px;
+        margin-left: 780px;
         display: flex;
         color: white;
         font-size: 15px;
         transition: 0.3s;
         height: 30px;
         align-items: center;
+        transition: transform .5s;
     }
 
     .active{
@@ -288,11 +288,6 @@ button.toggles p{
         .links-active {
             transform: scale(1);
         }
-
-    .nav-links ul a:hover{
-        /* transform: scale(2); */
-        background-color: #f7931a;
-    }
 
         .nav-links ul a::before {
             position: absolute;
@@ -306,21 +301,31 @@ button.toggles p{
 
 
     button.toggles{
+        position: fixed;
         left: 10.99px;
-        margin-top: 10px;
+        margin-top: 3.5px;
         height: 50.83px;
+        z-index: 10;
+        margin-left: 15px;
+        height: 45px;
     }
 
     .navBar{
+        position: fixed;
         display: flex;
         justify-content: space-around;
-        margin-left: 120px;
+        margin-left: -789px;
+        /* width: 100%; */
         align-items: center;
-        background-color: #242238;
+        background-color: #2c2b35;
+    }
+
+    .logo img{
+        margin-left: 860px;
     }
 
     .homepic{
-        left: -550px;
+        left: -610px;
         top: -20px;
     }
 
@@ -330,6 +335,7 @@ button.toggles p{
 
     .homepic .expi{
         left: 120px;
+        margin-top: -235px;
     }
 
     .homepic .expi p{
@@ -345,11 +351,13 @@ button.toggles p{
     }
 
     .section{
-        position: relative;   
+        position: relative; 
+        height: 100vh;  
     }
 
     .sub-1{
         margin-top: 490px;
+        margin-left: 15px;
     }
 
     .sub-1 p{
@@ -357,9 +365,6 @@ button.toggles p{
         letter-spacing: 4px;
         font-family: Arial, Helvetica, sans-serif;
         color: #e2e1ec;
-    }
-
-    .sub-1 p {
         display: flex;
         flex-direction: column;
         line-height: 34px;
@@ -376,8 +381,10 @@ button.toggles p{
 
     .sub-1 span{
         margin-top: 10px;
-        width: 80%;
-        font-size: 18px;
+        width: 50%;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        /* width: 390px; */
     }
 
     button.hire{
@@ -385,7 +392,7 @@ button.toggles p{
         height: 40px;
         width: 200px;
         font-size: 20px;
-        margin-top: 300px;
+        margin-top: 310px;
 
     }
 
@@ -397,13 +404,110 @@ button.toggles p{
         display: flex;
         margin-top: -70px;
         flex-direction: column;
+    }
 
+    .client, .hc, .cir{
+        transform: scale(0);
     }
 
     .okk{
         margin-top: 70px;
     }
     
+}
+
+
+@media screen and (max-width: 417px){
+button.hire {
+        position: absolute;
+        height: 40px;
+        width: 200px;
+        font-size: 20px;
+        margin-top: 365px;
+
+    }
+    .sub-1 span {
+            margin-top: 10px;
+            /* width: 50%; */
+            font-size: 20px;
+            letter-spacing: 0.5px;
+            /* width: 390px; */
+    }
+
+    .sub-1 b{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 293px){
+    body{
+        background-color: #4b5153;
+    }
+    .logo img {
+        /* margin-left: 10px; */
+        transform: scale(0);
+
+    }
+    .nav-links ul a {
+    /* margin-left: 19px; */
+    font-size: 20px;
+    line-height: 30px;
+    }
+
+    .hereMe{
+        margin-left: -59px;
+    }
+
+    .navBar{
+        background-color: transparent;
+    }
+}
+
+
+@media screen and (max-width: 252px) {
+    body{
+        background-color: #242238;
+    }
+
+    .navBar{
+        background-color: #f7931a;
+        margin-left: 3px;
+    }
+
+    .nav-links ul a{
+        margin-left: 460px;
+    }
+
+    .hereMe {
+    margin-left: 0px;
+    position: absolute;
+    left: 70px;
+    top: 280px;
+    background-color: transparent;
+    border: 1px solid #f7931a;
+
+    }
+
+    .hereMe a{
+    color: #f2f1ef;
+    font-size: 14px;
+    }
+
+    .logo img{
+        /* transform: scale(0); */
+        margin-left: -330px;
+    }
+    .nav-links{
+        margin-left: -930px;
+    }
+
+    .sub-1 span{
+        width: 220px;
+    }
+
+    button.hire{
+        margin-top: 390px;
+    }
 }
 
 .happy .cir:nth-of-type(2){
