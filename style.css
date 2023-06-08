@@ -436,9 +436,9 @@ button.toggles p{
 
 @media screen and (max-width: 728px) {
     body {
-        background-color: #f7931a;
-        margin-left: -35px;
-        height: 100vh;
+        /* background-color: #f7931a; */
+        /* margin-left: -35px; */
+        /* height: 100vh; */
         /* width: 100vh; */
     }
 
@@ -450,7 +450,7 @@ button.toggles p{
     }
 
     .nav-links ul a {
-        margin-left: -15px;
+        margin-left: -95px;
         display: flex;
         color: white;
         font-size: 15px;
@@ -493,23 +493,23 @@ button.toggles p{
         position: fixed;
         display: flex;
         justify-content: space-around;
-        margin-left: 45px;
+        /* margin-left: 45px; */
         width: 100%;
         align-items: center;
-        background-color: #2c2b35;
+        background-color: #343246;
     }
 
     button.hereMe {
-        margin-left: 70px;
+        margin-left: -140px;
     }
 
     .logo img {
         /* margin-left: 860px; */
-        margin-left: 150px;
+        margin-left: -100px;
     }
 
     .homepic {
-        left: -610px;
+        left: -510px;
         top: -20px;
     }
 
@@ -519,7 +519,7 @@ button.toggles p{
 
     .homepic .expi {
         left: 120px;
-        margin-top: 55px;
+        margin-top: -45px;
     }
 
     .homepic .expi p {
@@ -576,14 +576,14 @@ button.toggles p{
         height: 40px;
         width: 200px;
         font-size: 20px;
-        margin-top: 310px;
+        margin-top: 350px;
 
     }
 
 
 
     .sub-1 .tech {
-        margin-top: 100px;
+        margin-top: 150px;
     }
 
     .happy {
